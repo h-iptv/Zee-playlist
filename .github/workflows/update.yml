@@ -31,8 +31,8 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add artl.m3u || echo "Nothing to add"
-          git commit -m "Auto update artl.m3u" || echo "No changes"
+          git add Zee.m3u || echo "Nothing to add"
+          git commit -m "Auto update Zee.m3u" || echo "No changes"
 
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
