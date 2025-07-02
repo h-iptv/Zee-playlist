@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 # === Load env variables ===
 load_dotenv()
-SOURCE_URL = os.getenv("SOURCE_URL")
+SOURCE_URL = os.environ.get("SOURCE_URL")
 CHANNEL_GROUPS_RAW = os.getenv("CHANNEL_GROUPS")
 
 if not SOURCE_URL or not CHANNEL_GROUPS_RAW:
