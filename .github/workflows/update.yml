@@ -16,28 +16,28 @@ jobs:
       SOURCE_URL: ${{ secrets.SOURCE_URL }}  # Inject secret
 
     steps:
-      - name: Checkout Repository
+      - name: 📥 Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Setup Python
+      - name: 🐍 Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      - name: Install dependencies
+      - name: 📦 Install dependencies
         run: pip install python-dotenv requests
 
-      - name: Run update script
+      - name: ⚙️ Run update script
         run: python update_script.py
 
-      - name: Commit changes
+      - name: ✅ Commit changes
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add Zee.m3u || echo "Nothing to add"
           git commit -m "Auto update Zee.m3u" || echo "No changes"
 
-      - name: Push changes
+      - name: 📤 Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
