@@ -63,7 +63,7 @@ output_file = "Zee.m3u"
 if output_blocks:
     print(f"✅ Found {len(output_blocks)} categorized channels.")
     with open(output_file, "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n# Updated by Himanshu\n\n")
+        f.write("#EXTM3U\n# Updated By Himanshu\n\n")
         for block in output_blocks:
             f.write(block + "\n")
 else:
