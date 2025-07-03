@@ -26,6 +26,83 @@ for group, channels in channel_groups.items():
     for name in channels:
         allowed_channels[name.lower()] = group
 
+# === Your custom EXTINF replacements ===
+custom_channel_data = {
+  "aaj tak": {
+    "tvg-id": "aajtak",
+    "tvg-name": "Aaj Tak",
+    "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Aaj_Tak.png",
+    "display-name": "Aaj Tak"
+  },
+  "zee news": {
+    "tvg-id": "0-9-zeenews",
+    "tvg-name": "Zee News",
+    "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_News.png",
+    "display-name": "Zee News"
+  },
+  "zee tv hd": {
+    "tvg-id": "0-9-zeetvhd",
+    "tvg-name": "Zee TV HD",
+    "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_TV_HD.png",
+    "display-name": "Zee TV HD"
+  },
+  "&tv hd": {
+    "tvg-id": "0-9-tvhd_0",
+    "tvg-name": "&TV HD",
+    "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/And_TV_HD.png",
+    "display-name": "&TV HD"
+  },
+  "zee anmol": {
+    "tvg-id": "0-9-zeeanmol",
+    "tvg-name": "Zee Anmol",
+    "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Anmol.png",
+    "display-name": "Zee Anmol"
+  },
+  "zee cinema hd": {
+    "tvg-id": "0-9-zeecinemahd",
+    "tvg-name": "Zee Cinema HD",
+    "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Cinema_HD.png",
+    "display-name": "Zee Cinema HD"
+  },
+  "&pictures hd": {
+    "tvg-id": "0-9-tvpictureshd",
+    "tvg-name": "&Pictures HD",
+    "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/And_Pictures_HD.png",
+    "display-name": "&Pictures HD"
+  },
+  "zee bollywood": {
+    "tvg-id": "0-9-zeeclassic",
+    "tvg-name": "Zee Bollywood",
+    "tvg-logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Classic.png",
+    "display-name": "Zee Bollywood"
+  },
+  "&pictures": {
+    "tvg-id": "0-9-pictures",
+    "tvg-name": "&Pictures",
+    "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/And_Pictures.png",
+    "display-name": "&Pictures"
+  },
+  "zee cinema": {
+    "tvg-id": "0-9-zeecinema",
+    "tvg-name": "Zee Cinema",
+    "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Cinema.png",
+    "display-name": "Zee Cinema"
+  },
+  "zee tv": {
+    "tvg-id": "0-9-zeetv",
+    "tvg-name": "Zee TV",
+    "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_TV.png",
+    "display-name": "Zee TV"
+  },
+  "zee classic": {
+    "tvg-id": "0-9-176",
+    "tvg-name": "Zee Classic",
+    "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Classic.png",
+    "display-name": "Zee Classic"
+  }
+}
+
+
 # === Fetch playlist ===
 print(f"📥 Fetching playlist from: {SOURCE_URL}")
 try:
@@ -46,11 +123,24 @@ while i + 2 < len(lines):
         group = allowed_channels.get(channel_name.lower())
 
         if group:
-            # Inject or update group-title
-            if 'group-title="' in extinf:
-                updated_extinf = re.sub(r'group-title=".*?"', f'group-title="{group}"', extinf)
+            channel_key = channel_name.lower()
+            custom_info = custom_channel_data.get(channel_key)
+
+            if custom_info:
+                updated_extinf = (
+                    f'#EXTINF:-1 '
+                    f'tvg-id="{custom_info.get("tvg-id", "")}" '
+                    f'tvg-name="{custom_info.get("tvg-name", "")}" '
+                    f'tvg-logo="{custom_info.get("tvg-logo", "")}" '
+                    f'group-title="{group}",' 
+                    f'{custom_info.get("display-name", channel_name)}'
+                )
             else:
-                updated_extinf = extinf.replace(",", f' group-title="{group}",', 1)
+                # fallback: only update group-title
+                if 'group-title="' in extinf:
+                    updated_extinf = re.sub(r'group-title=".*?"', f'group-title="{group}"', extinf)
+                else:
+                    updated_extinf = extinf.replace(",", f' group-title="{group}",', 1)
 
             block = "\n".join([updated_extinf, lines[i+1], lines[i+2]])
             output_blocks.append(block)
@@ -58,7 +148,7 @@ while i + 2 < len(lines):
     else:
         i += 1
 
-# === Write output
+# === Write output ===
 output_file = "Zee.m3u"
 if output_blocks:
     print(f"✅ Found {len(output_blocks)} categorized channels.")
