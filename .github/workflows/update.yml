@@ -2,7 +2,6 @@ name: Update Playlist
 
 on:
   schedule:
-     - cron: '*/10 * * * *'  # Every 10 minutes
      - cron: '0 * * * *'     # Every hour
      - cron: '0 */4 * * *'   # Every 4 hours
   workflow_dispatch:
