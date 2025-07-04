@@ -28,7 +28,7 @@ for group, channels in channel_groups.items():
 
 # === Your custom EXTINF replacements ===
 custom_channel_data = {
-   "aaj tak": {
+  "aaj tak": {
     "tvg-id": "ts689",
     "tvg-name": "Aaj Tak",
     "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Aaj_Tak.png",
@@ -71,19 +71,19 @@ custom_channel_data = {
     "display-name": "&Pictures HD"
   },
   "zee bollywood": {
-    "tvg-id": "ts175",
+    "tvg-id": "441321",
     "tvg-name": "Zee Bollywood",
     "tvg-logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Classic.png",
     "display-name": "Zee Bollywood"
   },
   "&pictures": {
-    "tvg-id": "ts148",
+    "tvg-id": "441329",
     "tvg-name": "&Pictures",
     "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/And_Pictures.png",
     "display-name": "&Pictures"
   },
   "zee cinema": {
-    "tvg-id": "ts123",
+    "tvg-id": "441401",
     "tvg-name": "Zee Cinema",
     "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Cinema.png",
     "display-name": "Zee Cinema"
@@ -95,7 +95,7 @@ custom_channel_data = {
     "display-name": "Zee TV"
   },
   "zee classic": {
-    "tvg-id": "ts727",
+    "tvg-id": "411574",
     "tvg-name": "Zee Classic",
     "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Classic.png",
     "display-name": "Zee Classic"
