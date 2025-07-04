@@ -71,19 +71,19 @@ custom_channel_data = {
     "display-name": "&Pictures HD"
   },
   "zee bollywood": {
-    "tvg-id": "0-9-zeeclassic",
+    "tvg-id": "ts175",
     "tvg-name": "Zee Bollywood",
     "tvg-logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Classic.png",
     "display-name": "Zee Bollywood"
   },
   "&pictures": {
-    "tvg-id": "0-9-pictures",
+    "tvg-id": "ts148",
     "tvg-name": "&Pictures",
     "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/And_Pictures.png",
     "display-name": "&Pictures"
   },
   "zee cinema": {
-    "tvg-id": "0-9-zeecinema",
+    "tvg-id": "ts123",
     "tvg-name": "Zee Cinema",
     "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Cinema.png",
     "display-name": "Zee Cinema"
@@ -95,7 +95,7 @@ custom_channel_data = {
     "display-name": "Zee TV"
   },
   "zee classic": {
-    "tvg-id": "0-9-176",
+    "tvg-id": "ts727",
     "tvg-name": "Zee Classic",
     "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Classic.png",
     "display-name": "Zee Classic"
