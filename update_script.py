@@ -28,7 +28,7 @@ for group, channels in channel_groups.items():
 
 # === Your custom EXTINF replacements ===
 custom_channel_data = {
-  "aaj tak": {
+   "aaj tak": {
     "tvg-id": "aajtak",
     "tvg-name": "Aaj Tak",
     "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Aaj_Tak.png",
@@ -41,15 +41,15 @@ custom_channel_data = {
     "display-name": "Zee News"
   },
   "zee tv hd": {
-    "tvg-id": "0-9-zeetvhd",
+    "tvg-id": "zeetvhd.in",
     "tvg-name": "Zee TV HD",
-    "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_TV_HD.png",
+    "tvg-logo": "https://watchindia.net/images/channels/hindi/Zee_TV.png",
     "display-name": "Zee TV HD"
   },
   "&tv hd": {
-    "tvg-id": "0-9-tvhd_0",
-    "tvg-name": "&TV HD",
-    "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/And_TV_HD.png",
+    "tvg-id": "andtvhd.in",
+    "tvg-name": "& TV HD",
+    "tvg-logo": "https://watchindia.net/images/channels/hindi/And_TV_HD.png",
     "display-name": "&TV HD"
   },
   "zee anmol": {
@@ -59,15 +59,15 @@ custom_channel_data = {
     "display-name": "Zee Anmol"
   },
   "zee cinema hd": {
-    "tvg-id": "0-9-zeecinemahd",
+    "tvg-id": "zeecinemaindiahd.in",
     "tvg-name": "Zee Cinema HD",
-    "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Cinema_HD.png",
+    "tvg-logo": "https://watchindia.net/images/channels/hindi/Zee_Cinema_HD.png",
     "display-name": "Zee Cinema HD"
   },
   "&pictures hd": {
-    "tvg-id": "0-9-tvpictureshd",
-    "tvg-name": "&Pictures HD",
-    "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/And_Pictures_HD.png",
+    "tvg-id": "andpictureshd.in",
+    "tvg-name": "& Pictures HD",
+    "tvg-logo": "https://watchindia.net/images/channels/hindi/AndPictures_HD.png",
     "display-name": "&Pictures HD"
   },
   "zee bollywood": {
