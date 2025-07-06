@@ -1,4 +1,4 @@
-name: Update Playlist
+name: Update Playlist by corn-job
 
 on:
   workflow_dispatch:
