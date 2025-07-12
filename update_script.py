@@ -28,79 +28,80 @@ for group, channels in channel_groups.items():
 
 # === Your custom EXTINF replacements ===
 custom_channel_data = {
-  "aaj tak": {
-    "tvg-id": "ts689",
+  "aaj_tak": {
+    "tvg-id": "aaj_tak",
     "tvg-name": "Aaj Tak",
     "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Aaj_Tak.png",
     "display-name": "Aaj Tak"
   },
-  "zee news": {
-    "tvg-id": "ts259",
+  "zee_news": {
+    "tvg-id": "zee_news",
     "tvg-name": "Zee News",
     "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_News.png",
     "display-name": "Zee News"
   },
-  "zee tv hd": {
-    "tvg-id": "ts63",
+  "zee_tv_hd": {
+    "tvg-id": "zee_tv_hd",
     "tvg-name": "Zee TV HD",
     "tvg-logo": "https://watchindia.net/images/channels/hindi/Zee_TV.png",
     "display-name": "Zee TV HD"
   },
-  "&tv hd": {
-    "tvg-id": "ts40",
-    "tvg-name": "& TV HD",
+  "and_tv_hd": {
+    "tvg-id": "and_tv_hd",
+    "tvg-name": "&TV HD",
     "tvg-logo": "https://watchindia.net/images/channels/hindi/And_TV_HD.png",
     "display-name": "&TV HD"
   },
-  "zee anmol": {
-    "tvg-id": "ts523",
+  "zee_anmol": {
+    "tvg-id": "zee_anmol",
     "tvg-name": "Zee Anmol",
     "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Anmol.png",
     "display-name": "Zee Anmol"
   },
-  "zee cinema hd": {
-    "tvg-id": "ts503",
+  "zee_cinema_hd": {
+    "tvg-id": "zee_cinema_hd",
     "tvg-name": "Zee Cinema HD",
     "tvg-logo": "https://watchindia.net/images/channels/hindi/Zee_Cinema_HD.png",
     "display-name": "Zee Cinema HD"
   },
-  "&pictures hd": {
-    "tvg-id": "ts267",
-    "tvg-name": "& Pictures HD",
+  "and_pictures_hd": {
+    "tvg-id": "and_pictures_hd",
+    "tvg-name": "&Pictures HD",
     "tvg-logo": "https://watchindia.net/images/channels/hindi/AndPictures_HD.png",
     "display-name": "&Pictures HD"
   },
-  "zee bollywood": {
-    "tvg-id": "441321",
+  "zee_bollywood": {
+    "tvg-id": "zee_bollywood",
     "tvg-name": "Zee Bollywood",
     "tvg-logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Classic.png",
     "display-name": "Zee Bollywood"
   },
-  "&pictures": {
-    "tvg-id": "441329",
+  "and_pictures": {
+    "tvg-id": "and_pictures",
     "tvg-name": "&Pictures",
     "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/And_Pictures.png",
     "display-name": "&Pictures"
   },
-  "zee cinema": {
-    "tvg-id": "441401",
+  "zee_cinema": {
+    "tvg-id": "zee_cinema",
     "tvg-name": "Zee Cinema",
     "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Cinema.png",
     "display-name": "Zee Cinema"
   },
-  "zee tv": {
-    "tvg-id": "ts557",
+  "zee_tv": {
+    "tvg-id": "zee_tv",
     "tvg-name": "Zee TV",
     "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_TV.png",
     "display-name": "Zee TV"
   },
-  "zee classic": {
-    "tvg-id": "411574",
+  "zee_classic": {
+    "tvg-id": "zee_classic",
     "tvg-name": "Zee Classic",
     "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Classic.png",
     "display-name": "Zee Classic"
   }
 }
+
 
 
 # === Fetch playlist ===
