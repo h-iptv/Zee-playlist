@@ -1,4 +1,4 @@
-#EXTM3U
+#EXTM3U url-tvg="https://raw.githubusercontent.com/Himanshu8221/ept-temp/refs/heads/main/tv_schedule.xml"
 # Updated By Himanshu
 
 #EXTINF:-1 tvg-id="aaj_tak" tvg-name="Aaj Tak" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Aaj_Tak.png" group-title="News",Aaj Tak
