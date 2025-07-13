@@ -1,4 +1,4 @@
-#EXTM3U
+#EXTM3U url-tvg="https://epg.pw/xmltv/epg_IN.xml.gz"
 # Updated By Himanshu
 
 #EXTINF:-1 tvg-id="441408" tvg-name="Aaj Tak" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Aaj_Tak.png" group-title="News",Aaj Tak
