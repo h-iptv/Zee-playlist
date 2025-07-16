@@ -41,7 +41,7 @@ custom_channel_data = {
     "display-name": "Zee News"
   },
   "zee tv hd": {
-    "tvg-id": "441340",
+    "tvg-id": "zee-tv",
     "tvg-name": "Zee TV HD",
     "tvg-logo": "https://watchindia.net/images/channels/hindi/Zee_TV.png",
     "display-name": "Zee TV HD"
@@ -59,7 +59,7 @@ custom_channel_data = {
     "display-name": "Zee Anmol"
   },
   "zee cinema hd": {
-    "tvg-id": "441185",
+    "tvg-id": "zee-cinema",
     "tvg-name": "Zee Cinema HD",
     "tvg-logo": "https://watchindia.net/images/channels/hindi/Zee_Cinema_HD.png",
     "display-name": "Zee Cinema HD"
@@ -83,7 +83,7 @@ custom_channel_data = {
     "display-name": "&Pictures"
   },
   "zee cinema": {
-    "tvg-id": "441401",
+    "tvg-id": "zee-cinema",
     "tvg-name": "Zee Cinema",
     "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Cinema.png",
     "display-name": "Zee Cinema"
@@ -95,7 +95,7 @@ custom_channel_data = {
     "display-name": "Zee TV"
   },
   "zee classic": {
-    "tvg-id": "411574",
+    "tvg-id": "zee-classic",
     "tvg-name": "Zee Classic",
     "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Zee_Classic.png",
     "display-name": "Zee Classic"
